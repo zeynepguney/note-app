@@ -1,0 +1,37 @@
+/* note kağıdının tasarımı */
+.note{
+   padding: 25px;
+   height: 280px;
+   width: 260px;
+   display:flex;
+   flex-direction: column;
+   background-color: lightskyblue;
+   border-radius: 30px;
+}
+/*text alanının tasarımı */
+.note_text {
+    flex: 1;
+    resize: none;
+    background-color: whitesmoke;
+    font-size: 1rem;
+    line-height: 1.875rem;
+    outline: none;
+    border: none;
+  }
+ /*note kağıdının alt bilgi(footer) kısmı tasarımı */
+.note_footer{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+ /* varsayılan olarak silme butonu gizli*/
+.note_footer img{
+   cursor: pointer;
+   opacity: 0;
+   transition: 300ms;
+}
+
+/* ilgili not kağıdının üzerine gelince silme butonu aktif*/ 
+.note:hover .note_footer img{
+   opacity: 1;
+}

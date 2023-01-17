@@ -1,0 +1,33 @@
+/*not oluşturma butonu alanı */
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/*artı imgesi tasarımı(not ekleme) */
+.sidebar img{
+    width: 60px;
+    cursor:pointer; /*üzerine gelince tıklanabilirlik, fare imleci değişiyor*/
+}
+
+/* not kağıdı rengi seçme noktacıkları kapsayan alan*/ 
+.sidebar_list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    height: 0;
+    transition: 300ms;
+}
+/* not kağıdı rengi seçme alanı boyutları */
+.sidebar_list_active{
+    height: 300px;
+}
+ /*renk seçeneklerinin görüntülenme kısmı */ 
+.sidebar_list_item{
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    list-style: none;
+}
